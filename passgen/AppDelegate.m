@@ -33,17 +33,12 @@
     [self.password setStringValue:[PasswordGenerator generateRandomPasswordWithLength:self.passwordNumberOfCharacters.intValue]];
 }
 
-
 - (IBAction)quitButton:(id)sender {
     [[NSApplication sharedApplication] terminate:self.statusItem.menu];
 }
 
 - (IBAction)slider:(NSSlider *)sender {
     [self.passwordNumberOfCharacters setStringValue:[NSString stringWithFormat:@"%d", sender.intValue]];
-}
-
-- (void) mouseUp:(NSEvent*) event {
-    NSLog(@"Mouse up occured");
 }
 
 @end
