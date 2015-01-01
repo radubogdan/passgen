@@ -12,80 +12,105 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="z3j-k7-ftB">
-            <rect key="frame" x="0.0" y="0.0" width="250" height="26"/>
+            <rect key="frame" x="0.0" y="0.0" width="250" height="140"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <slider verticalHuggingPriority="750" fixedFrame="YES" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LDJ-3U-UD6">
-                    <rect key="frame" x="51" y="3" width="181" height="21"/>
-                    <sliderCell key="cell" continuous="YES" state="on" alignment="left" minValue="6" maxValue="20" doubleValue="6" tickMarkPosition="above" sliderType="linear" id="5OC-mk-sNg"/>
-                    <connections>
-                        <action selector="slider:" target="Voe-Tx-rLC" id="EzG-L4-7fK"/>
-                    </connections>
-                </slider>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t8W-zg-f3P">
-                    <rect key="frame" x="7" y="5" width="34" height="17"/>
+                    <rect key="frame" x="128" y="113" width="34" height="17"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="6" id="Plb-K2-aIC">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ze0-hz-j3y">
+                    <rect key="frame" x="83" y="43" width="85" height="17"/>
+                    <buttonCell key="cell" type="inline" title="Generate" bezelStyle="inline" alignment="center" borderStyle="border" inset="2" id="HJZ-XM-SZq">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystemBold"/>
+                        <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                    </buttonCell>
+                    <connections>
+                        <action selector="generateButtonClicked:" target="Voe-Tx-rLC" id="WV5-3z-QKf"/>
+                    </connections>
+                </button>
+                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q1X-8Y-tpt">
+                    <rect key="frame" x="20" y="11" width="210" height="22"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" placeholderString="password" drawsBackground="YES" id="vPn-qk-VgN">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WJb-BG-pZ8">
+                    <rect key="frame" x="16" y="65" width="108" height="22"/>
+                    <buttonCell key="cell" type="check" title="   Symbols" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="cd4-ea-cE5">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EJX-A1-d5u">
+                    <rect key="frame" x="16" y="87" width="108" height="22"/>
+                    <buttonCell key="cell" type="check" title="   Numerals" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="fKV-wJ-PCn">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vkd-dL-TOI">
+                    <rect key="frame" x="16" y="110" width="108" height="22"/>
+                    <buttonCell key="cell" type="check" title="   Capitals" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="qbK-of-ap1">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="djJ-Oo-2eF">
+                    <rect key="frame" x="160" y="113" width="72" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Characters" id="kU3-8c-I4x">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <slider verticalHuggingPriority="750" fixedFrame="YES" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LDJ-3U-UD6">
+                    <rect key="frame" x="135" y="88" width="97" height="21"/>
+                    <sliderCell key="cell" continuous="YES" state="on" alignment="left" minValue="6" maxValue="20" doubleValue="6" tickMarkPosition="above" sliderType="linear" id="5OC-mk-sNg"/>
+                    <connections>
+                        <action selector="slider:" target="Voe-Tx-rLC" id="EzG-L4-7fK"/>
+                    </connections>
+                </slider>
             </subviews>
-            <point key="canvasLocation" x="384" y="391"/>
+            <point key="canvasLocation" x="392" y="419"/>
         </customView>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
+                <outlet property="capitalsOption" destination="Vkd-dL-TOI" id="B44-OI-hLN"/>
                 <outlet property="menu" destination="Ogt-pB-MpI" id="s1a-3A-dNl"/>
-                <outlet property="password" destination="N18-ye-217" id="r8k-WX-elw"/>
+                <outlet property="numeralsOption" destination="EJX-A1-d5u" id="Xz0-6Z-2Bf"/>
+                <outlet property="password" destination="Q1X-8Y-tpt" id="OKq-xc-imw"/>
                 <outlet property="passwordNumberOfCharacters" destination="t8W-zg-f3P" id="yal-Dc-MP5"/>
+                <outlet property="symbolsOption" destination="WJb-BG-pZ8" id="A2n-tW-en9"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu id="Ogt-pB-MpI">
             <items>
-                <menuItem title="Slider View" id="eLA-8U-ITV">
+                <menuItem title="Custom view" id="eLA-8U-ITV">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <outlet property="view" destination="z3j-k7-ftB" id="IVF-s8-eGA"/>
                     </connections>
                 </menuItem>
-                <menuItem title="Generate" id="3wv-Vf-hTi">
+                <menuItem isSeparatorItem="YES" id="xMg-1c-Zgj"/>
+                <menuItem title="Quit" id="OJA-Yh-kvA">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="generateButtonClicked:" target="Voe-Tx-rLC" id="LCC-eR-o9I"/>
-                    </connections>
-                </menuItem>
-                <menuItem isSeparatorItem="YES" id="IC2-c2-Pav"/>
-                <menuItem title="Password View" id="FSY-Rt-w8z">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                    <connections>
-                        <outlet property="view" destination="VNg-Yi-vUa" id="a4a-d2-cz3"/>
-                    </connections>
-                </menuItem>
-                <menuItem isSeparatorItem="YES" id="r9f-dD-Bhm"/>
-                <menuItem title="Quit" id="t8D-gc-jHj">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                    <connections>
-                        <action selector="quitButton:" target="Voe-Tx-rLC" id="whV-nH-z6D"/>
+                        <action selector="quitButton:" target="Voe-Tx-rLC" id="X6d-dA-iit"/>
                     </connections>
                 </menuItem>
             </items>
             <point key="canvasLocation" x="336" y="259.5"/>
         </menu>
-        <customView id="VNg-Yi-vUa">
-            <rect key="frame" x="0.0" y="0.0" width="250" height="33"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-            <subviews>
-                <textField verticalHuggingPriority="750" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N18-ye-217">
-                    <rect key="frame" x="15" y="5" width="217" height="22"/>
-                    <textFieldCell key="cell" selectable="YES" continuous="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" placeholderString="Click Generate" id="s4E-Aj-Nry">
-                        <font key="font" metaFont="system"/>
-                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="deviceWhite"/>
-                    </textFieldCell>
-                </textField>
-            </subviews>
-            <point key="canvasLocation" x="384" y="484.5"/>
-        </customView>
     </objects>
 </document>

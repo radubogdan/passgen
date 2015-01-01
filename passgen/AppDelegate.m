@@ -10,6 +10,9 @@
 
 @interface AppDelegate ()
 @property (strong, nonatomic) NSStatusItem *statusItem;
+@property (weak) IBOutlet NSButton *capitalsOption;
+@property (weak) IBOutlet NSButton *numeralsOption;
+@property (weak) IBOutlet NSButton *symbolsOption;
 @property (weak) IBOutlet NSTextField *passwordNumberOfCharacters;
 @property (weak) IBOutlet NSTextField *password;
 @end
@@ -29,8 +32,9 @@
     _statusItem.menu = menu;
 }
 
-- (IBAction)generateButtonClicked:(NSMenuItem *)sender {
-    [self.password setStringValue:[PasswordGenerator generateRandomPasswordWithLength:self.passwordNumberOfCharacters.intValue]];
+- (IBAction)generateButtonClicked:(NSButton *)sender {
+    PasswordGenerator *passwd = [[PasswordGenerator alloc] initUsingOptions:[self getOptionsFromUI]];
+    [self.password setStringValue:[passwd generateRandomPasswordWithLength:self.passwordNumberOfCharacters.intValue]];
 }
 
 - (IBAction)quitButton:(id)sender {
@@ -39,6 +43,12 @@
 
 - (IBAction)slider:(NSSlider *)sender {
     [self.passwordNumberOfCharacters setStringValue:[NSString stringWithFormat:@"%d", sender.intValue]];
+}
+
+- (NSDictionary *)getOptionsFromUI {
+    return @{ @"Capitals" : self.capitalsOption.stringValue,
+              @"Numerals" : self.numeralsOption.stringValue,
+              @"Symbols" :  self.symbolsOption.stringValue };
 }
 
 @end

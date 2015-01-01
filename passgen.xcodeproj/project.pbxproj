@@ -12,7 +12,7 @@
 		4A46B7B11A541A53007AA3C3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A46B7B01A541A53007AA3C3 /* Images.xcassets */; };
 		4A46B7B41A541A53007AA3C3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A46B7B21A541A53007AA3C3 /* MainMenu.xib */; };
 		4A46B7C01A541A53007AA3C3 /* passgenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A46B7BF1A541A53007AA3C3 /* passgenTests.m */; };
-		4A46B7CB1A542104007AA3C3 /* PasswordGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A46B7CA1A542104007AA3C3 /* PasswordGenerator.m */; };
+		4AAAE22F1A55E6BC0013BCFA /* PasswordGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAAE22E1A55E6BC0013BCFA /* PasswordGenerator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +36,8 @@
 		4A46B7B91A541A53007AA3C3 /* passgenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = passgenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A46B7BE1A541A53007AA3C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A46B7BF1A541A53007AA3C3 /* passgenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = passgenTests.m; sourceTree = "<group>"; };
-		4A46B7C91A542104007AA3C3 /* PasswordGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordGenerator.h; sourceTree = "<group>"; };
-		4A46B7CA1A542104007AA3C3 /* PasswordGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordGenerator.m; sourceTree = "<group>"; };
+		4AAAE22E1A55E6BC0013BCFA /* PasswordGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PasswordGenerator.m; path = Model/PasswordGenerator.m; sourceTree = "<group>"; };
+		4AAAE2301A55E6D50013BCFA /* PasswordGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PasswordGenerator.h; path = Model/PasswordGenerator.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +81,7 @@
 			children = (
 				4A46B7AB1A541A53007AA3C3 /* AppDelegate.h */,
 				4A46B7AC1A541A53007AA3C3 /* AppDelegate.m */,
-				4A46B7C91A542104007AA3C3 /* PasswordGenerator.h */,
-				4A46B7CA1A542104007AA3C3 /* PasswordGenerator.m */,
+				4AAAE22D1A55E6830013BCFA /* Model */,
 				4A46B7B01A541A53007AA3C3 /* Images.xcassets */,
 				4A46B7B21A541A53007AA3C3 /* MainMenu.xib */,
 				4A46B7A91A541A53007AA3C3 /* Supporting Files */,
@@ -114,6 +113,15 @@
 				4A46B7BE1A541A53007AA3C3 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4AAAE22D1A55E6830013BCFA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4AAAE2301A55E6D50013BCFA /* PasswordGenerator.h */,
+				4AAAE22E1A55E6BC0013BCFA /* PasswordGenerator.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,7 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A46B7AF1A541A53007AA3C3 /* main.m in Sources */,
-				4A46B7CB1A542104007AA3C3 /* PasswordGenerator.m in Sources */,
+				4AAAE22F1A55E6BC0013BCFA /* PasswordGenerator.m in Sources */,
 				4A46B7AD1A541A53007AA3C3 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,6 +412,7 @@
 				4A46B7C51A541A53007AA3C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A46B7C61A541A53007AA3C3 /* Build configuration list for PBXNativeTarget "passgenTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +421,7 @@
 				4A46B7C81A541A53007AA3C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
