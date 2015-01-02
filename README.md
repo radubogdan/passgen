@@ -14,6 +14,10 @@ Available options:
 
 If no option is selected the default generated password will be 6 characters long with a-z letters only.
 
+## Download
+Extract the .zip and copy passgen.app in your Applications directory.
+Link [here](http://dotix.me/apps/passgen.zip)
+
 ## License
 See the [LICENSE](https://github.com/radubogdan/passgen/blob/master/LICENSE).
 
