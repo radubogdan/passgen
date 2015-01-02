@@ -3,7 +3,7 @@ passgen
 
 Simple password generator status bar application for OS X.
 
-<a href="http://imgur.com/O078w4H"><img src="http://i.imgur.com/O078w4H.png" title="source: imgur.com" /></a>
+<a href="http://imgur.com/pIkZWof"><img src="http://i.imgur.com/pIkZWof.png" title="source: imgur.com" /></a>
 
 Available options:
 
@@ -31,3 +31,6 @@ See the [LICENSE](https://github.com/radubogdan/passgen/blob/master/LICENSE).
 
 ## Notes
 Icon was made by [freepik](http://www.flaticon.com/authors/freepik) under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/).
+
+## Disclaimer
+This is my first app. I'm not an OS X Developer nor a iOS Developer. I don't know the AppKit APIs very well, so please bear with me.
