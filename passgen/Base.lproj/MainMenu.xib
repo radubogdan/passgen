@@ -12,76 +12,83 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="z3j-k7-ftB">
-            <rect key="frame" x="0.0" y="0.0" width="250" height="140"/>
+            <rect key="frame" x="0.0" y="0.0" width="250" height="152"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t8W-zg-f3P">
-                    <rect key="frame" x="128" y="113" width="34" height="17"/>
+                    <rect key="frame" x="128" y="125" width="34" height="17"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="6" id="Plb-K2-aIC">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ze0-hz-j3y">
-                    <rect key="frame" x="83" y="43" width="85" height="17"/>
-                    <buttonCell key="cell" type="inline" title="Generate" bezelStyle="inline" alignment="center" borderStyle="border" inset="2" id="HJZ-XM-SZq">
-                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" metaFont="smallSystemBold"/>
-                        <string key="keyEquivalent" base64-UTF8="YES">
-DQ
-</string>
-                    </buttonCell>
-                    <connections>
-                        <action selector="generateButtonClicked:" target="Voe-Tx-rLC" id="WV5-3z-QKf"/>
-                    </connections>
-                </button>
                 <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q1X-8Y-tpt">
-                    <rect key="frame" x="20" y="11" width="210" height="22"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" placeholderString="password" drawsBackground="YES" id="vPn-qk-VgN">
+                    <rect key="frame" x="20" y="12" width="210" height="22"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" placeholderString="password" drawsBackground="YES" id="vPn-qk-VgN">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
                 <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WJb-BG-pZ8">
-                    <rect key="frame" x="16" y="65" width="108" height="22"/>
+                    <rect key="frame" x="16" y="77" width="108" height="22"/>
                     <buttonCell key="cell" type="check" title="   Symbols" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="cd4-ea-cE5">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
                 </button>
                 <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EJX-A1-d5u">
-                    <rect key="frame" x="16" y="87" width="108" height="22"/>
+                    <rect key="frame" x="16" y="99" width="108" height="22"/>
                     <buttonCell key="cell" type="check" title="   Numerals" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="fKV-wJ-PCn">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
                 </button>
                 <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vkd-dL-TOI">
-                    <rect key="frame" x="16" y="110" width="108" height="22"/>
+                    <rect key="frame" x="16" y="122" width="108" height="22"/>
                     <buttonCell key="cell" type="check" title="   Capitals" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="qbK-of-ap1">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
                 </button>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="djJ-Oo-2eF">
-                    <rect key="frame" x="160" y="113" width="72" height="17"/>
+                    <rect key="frame" x="160" y="125" width="72" height="17"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Characters" id="kU3-8c-I4x">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <slider verticalHuggingPriority="750" fixedFrame="YES" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LDJ-3U-UD6">
-                    <rect key="frame" x="135" y="88" width="97" height="21"/>
+                <slider toolTip="Set number of characters" verticalHuggingPriority="750" fixedFrame="YES" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LDJ-3U-UD6">
+                    <rect key="frame" x="135" y="100" width="97" height="21"/>
                     <sliderCell key="cell" continuous="YES" state="on" alignment="left" minValue="6" maxValue="20" doubleValue="6" tickMarkPosition="above" sliderType="linear" id="5OC-mk-sNg"/>
                     <connections>
                         <action selector="slider:" target="Voe-Tx-rLC" id="EzG-L4-7fK"/>
                     </connections>
                 </slider>
+                <button toolTip="Copy current password to clipboard" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ntw-t8-vSp">
+                    <rect key="frame" x="210" y="12" width="19" height="20"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="CopyIcon" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="yXg-aH-dJ5">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="copyButtonPressed:" target="Voe-Tx-rLC" id="JLl-4M-Mf4"/>
+                    </connections>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ujS-WK-6HQ">
+                    <rect key="frame" x="68" y="43" width="115" height="28"/>
+                    <buttonCell key="cell" type="bevel" title="Generate" bezelStyle="regularSquare" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="yaS-nJ-1sX">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="generateButtonClicked:" target="Voe-Tx-rLC" id="Uxf-Mu-yCD"/>
+                    </connections>
+                </button>
             </subviews>
-            <point key="canvasLocation" x="392" y="419"/>
+            <point key="canvasLocation" x="392" y="425"/>
         </customView>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
@@ -113,4 +120,7 @@ DQ
             <point key="canvasLocation" x="336" y="259.5"/>
         </menu>
     </objects>
+    <resources>
+        <image name="CopyIcon" width="79.448272705078125" height="79.448272705078125"/>
+    </resources>
 </document>

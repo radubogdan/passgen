@@ -45,6 +45,12 @@
     [self.passwordNumberOfCharacters setStringValue:[NSString stringWithFormat:@"%d", sender.intValue]];
 }
 
+- (IBAction)copyButtonPressed:(NSButton *)sender {
+    NSPasteboard *pasteBoard = [NSPasteboard generalPasteboard];
+    [pasteBoard declareTypes:[NSArray arrayWithObjects:NSStringPboardType, nil] owner:nil];
+    [pasteBoard setString: [self.password stringValue] forType:NSStringPboardType];
+}
+
 - (NSDictionary *)getOptionsFromUI {
     return @{ @"Capitals" : self.capitalsOption.stringValue,
               @"Numerals" : self.numeralsOption.stringValue,
